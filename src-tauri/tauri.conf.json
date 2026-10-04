@@ -7,6 +7,7 @@
   "app": {
     "windows": [
       {
+        "create": false,
         "title": "Enactus Nigeria – Admin",
         "width": 1280,
         "height": 820,
