@@ -1,0 +1,8 @@
+{
+  "name": "enactus-ng-desktop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Enactus Nigeria admin dashboard as a desktop app (Tauri)",
+  "scripts": { "tauri": "tauri" },
+  "devDependencies": { "@tauri-apps/cli": "^2" }
+}
