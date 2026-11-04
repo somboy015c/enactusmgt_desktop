@@ -53,6 +53,12 @@ jobs:
       - name: Generate app icons
         run: npx tauri icon app-icon.png
 
+      - name: Number this build so it installs over the previous one
+        shell: bash
+        run: |
+          sed -i.bak -E 's/"version": "[^"]*"/"version": "1.0.${{ github.run_number }}"/' src-tauri/tauri.conf.json
+          grep -n '"version"' src-tauri/tauri.conf.json
+
       - name: Build
         run: npx tauri build --bundles ${{ matrix.bundles }} ${{ matrix.extra }}
 
