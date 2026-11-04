@@ -19,3 +19,9 @@ Everything is built by GitHub Actions – you never run a command.
 ## Notes
 - The dashboard is a live PHP site, so the app needs an internet connection and shows a "Try again" screen when offline.
 - The apps are not code-signed: Windows may show SmartScreen (*More info → Run anyway*); on macOS right-click → *Open* the first time.
+
+## What's new (v56 refresh)
+- Works with the v56 dashboard: bulk ID-card PDFs and "download all staff cards" download normally; "View website" / "Download the app" links stay hidden inside the app.
+- Each build gets a higher version number, so the new installer updates the old app.
+- Upload the v56 website files first, then push this folder to GitHub to build.
+- The Nationals check-in desk camera scan depends on the computer's browser engine; if it does not work, search by name/ID or use the phone app.
